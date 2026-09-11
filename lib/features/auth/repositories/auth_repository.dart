@@ -44,6 +44,14 @@ class AuthRepository {
       throw Exception('An unexpected error occurred: $e');
     }
   }
+
+  Future<void> logout() async {
+    // This securely erases the JWT from the device
+    await _secureStorage.delete(key: AppConstants.tokenKey);
+  }
+
+
+
 }
 
 // ---------------------------------------------------------------------------

@@ -1,4 +1,4 @@
-import 'package:employee_frontend/features/auth/views/admin_dashboard.dart';
+import 'package:employee_frontend/features/admin/views/admin_dashboard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

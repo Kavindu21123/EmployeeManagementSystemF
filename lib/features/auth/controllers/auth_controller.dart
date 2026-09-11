@@ -34,6 +34,14 @@ class AuthController extends AsyncNotifier<void> {
     return true;
   }
 }
+
+  Future<void> logout() async {
+    final repo = ref.read(authRepositoryProvider);
+    await repo.logout();
+    // If your controller manages state, you can reset it here:
+    // state = const AsyncValue.data(false); 
+  }
+
 }
 
 // ---------------------------------------------------------------------------
